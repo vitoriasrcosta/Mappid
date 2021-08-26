@@ -12,55 +12,55 @@ export default function Avaliacao({navigation}) {
     return (
         <ScrollView>
             <KeyboardAvoidingView> 
-                <View style={css.container}>
+                <View style={css.containerAvalicao}>
                     <Menu title="Avaliação" navigation={navigation}/>
                 </View>
 
-                <View style={css.container}>
-                    <View style={css.box1}>
-                        <Text style={css.text}>Nome do Estabelecimento</Text>
-                        <TextInput style={css.input}/>
+                <View style={css.containerAvalicao}>
+                    <View style={css.boxFormAvaliacao}>
+                        <Text style={css.textFormAvaliacao}>Nome do Estabelecimento</Text>
+                        <TextInput style={css.inputFormAvaliacao}/>
                     </View>
 
-                    <View style={css.box2}>
-                        <Text style={css.text2}>País</Text>
-                        <TextInput style={css.input2}/>
+                    <View style={css.boxFormAvaliacaoSmall}>
+                        <Text style={css.textFormAvaliacaoSmall}>País</Text>
+                        <TextInput style={css.inputSmallFormAvaliacao}/>
                     </View>
 
-                    <View style={css.box2}>
-                        <Text style={css.text2}>Estado</Text>
-                        <TextInput style={css.input2}/>
+                    <View style={css.boxFormAvaliacaoSmall}>
+                        <Text style={css.textFormAvaliacaoSmall}>Estado</Text>
+                        <TextInput style={css.inputSmallFormAvaliacao}/>
                     </View>
 
-                    <View style={css.box2}>
-                        <Text style={css.text2}>Cidade</Text>
-                        <TextInput style={css.input2}/>
+                    <View style={css.boxFormAvaliacaoSmall}>
+                        <Text style={css.textFormAvaliacaoSmall}>Cidade</Text>
+                        <TextInput style={css.inputSmallFormAvaliacao}/>
                     </View>
 
-                    <View style={css.box2}>
-                        <Text style={css.text2}>Número</Text>
-                        <TextInput style={css.input2}/>
+                    <View style={css.boxFormAvaliacaoSmall}>
+                        <Text style={css.textFormAvaliacaoSmall}>Número</Text>
+                        <TextInput style={css.inputSmallFormAvaliacao}/>
                     </View>
 
-                    <View style={css.box1}>
-                        <Text style={css.text1}>Rua</Text>
-                        <TextInput style={css.input}/>
+                    <View style={css.boxFormAvaliacao}>
+                        <Text style={css.textFormAvaliacao}>Rua</Text>
+                        <TextInput style={css.inputFormAvaliacao}/>
                     </View>
 
-                    <View style={css.box1}>
-                        <Text style={css.text1}>Quão segurx você se sentiu neste lugar?</Text>
-                        <TextInput style={css.input}/>
+                    <View style={css.boxFormAvaliacao}>
+                        <Text style={css.textFormAvaliacao}>Quão segurx você se sentiu neste lugar?</Text>
+                        <TextInput style={css.inputFormAvaliacao}/>
                     </View>
 
-                    <View style={css.box1}>
-                        <Text style={css.text1}>Selecione as palavras-chaves que melhor 
+                    <View style={css.boxFormAvaliacao}>
+                        <Text style={css.textFormAvaliacao}>Selecione as palavras-chaves que melhor 
                                             descrevem o que você sofreu (opcional)</Text>
-                        <TextInput style={css.input}/>
+                        <TextInput style={css.inputFormAvaliacao}/>
                     </View>
 
-                    <View style={css.box1}>
-                        <Text style={css.text3}>Justificativa</Text>
-                        <TextInput style={css.input3}/>
+                    <View style={css.boxFormAvaliacao}>
+                        <Text style={css.textJustificativa}>Justificativa</Text>
+                        <TextInput style={css.inputJustificativa}/>
                     </View>
 
                     <View style={css.checkBox}>
@@ -69,14 +69,14 @@ export default function Avaliacao({navigation}) {
                             onValueChange={() => setSelectedJustificativa(!isSelectedJustificativa)}
                             style={css.checkBox}
                         />
-                        <Text style={css.checkBoxText}>Quero postar esta justificativa</Text>
+                        <Text style={css.textCheckBox}>Quero postar esta justificativa</Text>
 
                         <CheckBox
                             value={isSelectedTermos}
                             onValueChange={() => setSelectedTermos(!isSelectedTermos)}
                             style={css.checkBox}
                         />
-                        <Text style={css.checkBoxText2}>Confirmo que tudo que disse é verdade</Text>
+                        <Text style={css.textCheckBoxConfirmacao}>Confirmo que tudo que disse é verdade</Text>
                     </View>
                 
 

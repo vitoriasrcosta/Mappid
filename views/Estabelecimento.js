@@ -1,15 +1,14 @@
+import { Text, View } from 'react-native';
 import React from 'react';
-import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
-import Routes from './routes';
-
+import {css} from '../assets/css/Css';
 
 export default function Estabelecimento() {
-    const Tab = createMaterialBottomTabNavigator();
 
     return (
-        <NavigationContainer independent={true}>
-            <Routes/>
-        </NavigationContainer>
+        <View style={css.containerAvaliacao}> 
+            <View style={css.areaMenu}>
+                <Text style={css.areaTitle}>Estabelecimento</Text>
+            </View>
+        </View>
     );
 }

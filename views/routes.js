@@ -4,7 +4,8 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import {css} from '../assets/css/Css';
 import Avaliacao from './Avaliacao';
 import Busca from './Busca';
-import Mapa from './Mapa'
+import Mapa from './Mapa';
+import Estabelecimento from './Estabelecimento';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -43,7 +44,6 @@ const Routes = () => {
                 }} />
         </Tab.Navigator>
     );
-
 }
 
 export default Routes;

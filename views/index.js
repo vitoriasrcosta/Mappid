@@ -1,6 +1,8 @@
 import Avaliacao from './Avaliacao';
 import Mapa from './Mapa';
-import Estabelecimento from './Estabelecimento';
+import TabScreen from './TabScreen';
 import Busca from './Busca';
+import Estabelecimento from './Estabelecimento';
 
-export {Avaliacao, Mapa, Estabelecimento, Busca};
+
+export {Avaliacao, Mapa, Estabelecimento, TabScreen, Busca};

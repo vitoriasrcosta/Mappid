@@ -1,131 +1,141 @@
 import {StyleSheet} from "react-native";
 
 const css = StyleSheet.create({
-    container:{
+    // Container da página de avaliação, utilizado provisoriamente na criação de outras páginas
+    containerAvalicao:{
         backgroundColor: 'white',
         flexDirection: 'row',
         flex: 1,
         flexWrap: 'wrap',
     },
-    box1:{
+    // Box de separação do espaço utiliado pelos campos de input grandes do formulário
+    boxFormAvaliacao:{
         height: 70,
         width: '100%',
-        marginTop: 1
+        marginTop: '0.3%'
     },
-    box2:{
+    // Box de separação do espaço utiliado pelos campos de input pequenos do formulário (quando tem dois alinhados)
+    boxFormAvaliacaoSmall:{
         height: 70,
         width: '50%',
-        marginTop: 1
+        marginTop: '1%'
     },
+    // Campos de validação para envio do formulário
     checkBox:{
         height: 3,
         width: '80%',
-        marginTop: 50,
-        marginLeft: 8
+        marginTop: '17%',
+        marginLeft: '2.25%'
     },
+    // Container dos botões do formulário de avaliação
     buttonBox:{
         height: 130,
         width: '50%',
-        marginTop: 80
+        marginTop: '22%'
     },
+    // Estilização do botão "CANCELAR"
     buttonCancelar:{
-        marginRight: 5,
-        marginTop: 40,
-        padding: 12,
-        width: 96,
+        marginRight: '2.75%',
+        marginTop: '22%',
+        padding: '7%',
+        width: '50%',
         backgroundColor: '#DADADA',
         alignSelf: 'flex-end',
         borderRadius: 5
     },
+    // Estilização do botão "AVALIAR"
     buttonAvaliar:{
-        marginLeft: 5,
-        marginTop: 40,
-        padding: 12,
-        width: 96,
+        marginLeft: '2.75%',
+        marginTop: '22%',
+        padding: '7%',
+        width: '50%',
         backgroundColor: '#A6E6E3',
         alignSelf: 'flex-start',
         borderRadius: 5
     },
+    // Estilização do texto dentro dos botões
     buttonText:{
         fontSize: 15,
         color: '#4A4A4A',
         alignSelf: 'center',
     },
-    text:{
+    // Texto "Nome do estabelecimento"
+    textFormAvaliacao:{
         fontSize: 16,
         color: '#4A4A4A',
-        paddingLeft: 22,
-        marginTop: 10
+        paddingLeft: '5.5%',
+        marginTop: '2.5%'
     },
-    text1:{
+    // Texto do formulário de avaliação 
+    textFormAvaliacaoSmall:{
         fontSize: 16,
         color: '#4A4A4A',
-        paddingLeft: 22
+        paddingLeft: '11%',
+        paddingTop: '4%'
     },
-    text2:{
+    // Texto da parte de "JUSTIFICATIVA" do formulário 
+    textJustificativa:{
         fontSize: 16,
         color: '#4A4A4A',
-        paddingLeft: 20
+        paddingLeft: '5.5%',
+        marginTop: '8%'
     },
-    text3:{
-        fontSize: 16,
-        color: '#4A4A4A',
-        paddingLeft: 20,
-        marginTop: 18
-    },
-    checkBoxText:{
+    // Texto das CheckBox
+    textCheckBox:{
         fontSize: 13,
         color: '#4A4A4A',
-        marginTop: -10,
-        marginLeft: 40,
-        marginBottom: -30
+        marginTop: '-3.5%',
+        marginLeft: '14%',
+        marginBottom: '-10%'
     },
-    checkBoxText2:{
+    textCheckBoxConfirmacao:{
         fontSize: 13,
         color: '#4A4A4A',
-        marginTop: -10,
-        marginLeft: 40,
+        marginTop: '-3.5%',
+        marginLeft: '14%',
     },
-    input:{
-        marginTop: 4,
-        marginBottom: 8,
+    // Input dos campos maiores
+    inputFormAvaliacao:{
+        marginTop: '1.5%',
+        marginBottom: '2%',
         alignSelf: 'center',
         width: '90%',
         height: 32,
-        paddingLeft: 12,
-        paddingTop: 2,
-        paddingBottom: 3,
+        paddingLeft: '3%',
+        paddingTop: '0.5%',
+        paddingBottom: '1%',
         backgroundColor: 'white',
         borderColor: '#DADADA',
         borderRadius: 10,
         borderStyle: 'solid',
         borderWidth: 1
     },
-    input2:{
-        marginTop: 4,
-        marginBottom: 8,
+    // Input dos campos menores
+    inputSmallFormAvaliacao:{
+        marginTop: '1.5%',
+        marginBottom: '2%',
         alignSelf: 'center',
         width: '80%',
         height: 32,
-        paddingLeft: 12,
-        paddingTop: 2,
-        paddingBottom: 3,
+        paddingLeft: '3%',
+        paddingTop: '0.5%',
+        paddingBottom: '1%',
         backgroundColor: 'white',
         borderColor: '#DADADA',
         borderRadius: 10,
         borderStyle: 'solid',
         borderWidth: 1
-
     },
-    input3:{
-        marginTop: 4,
-        marginBottom: 8,
+    // Input da "JUSTIFICATIVA" - maior de todos
+    inputJustificativa:{
+        marginTop: '1.5%',
+        marginBottom: '2%',
         alignSelf: 'center',
         width: '90%',
         height: 90,
-        paddingLeft: 12,
-        paddingTop: 2,
-        paddingBottom: 3,
+        paddingLeft: '3%',
+        paddingTop: '0.5%',
+        paddingBottom: '1%',
         backgroundColor: 'white',
         borderColor: '#DADADA',
         borderRadius: 10,
@@ -135,12 +145,12 @@ const css = StyleSheet.create({
     bottomTab:{
         backgroundColor: '#FFF',
         fontSize: 15,
-        color: '#5FB0B6'
+        color: '#5FB0B6',
     },
     areaMenu:{
         flexDirection: 'row',
-        paddingTop: 40,
-        paddingBottom: 10,
+        paddingTop: '11%',
+        paddingBottom: '3%',
         width: '100%',
         backgroundColor: '#5FB0B6',
         alignItems: 'center',
@@ -150,7 +160,7 @@ const css = StyleSheet.create({
         width: '90%',
         fontSize: 17,
         color: 'white',
-        textAlign: 'center'
+        textAlign: 'center',
     },
     buttonSair:{
         textAlign: 'left',
